@@ -3,9 +3,23 @@ title: [Coursera Recommendation by Deeplearning.ai](https://www.coursera.org/lea
 ---
 
 
-# Collaborative filtering
-
 # Recommender Systems implementation detail
+
+## Mean Normalization
+
+![cost function](src/cost_function.png)
+
+- If we have a new user who rated nothing, then we are difficult to recommend items with given cost function.
+- so that, we need to normalize the values
+
+
+## Finding related items
+
+- We can find a similar item to item i, we can find item k with feature of k to Xi
+  - the distance of Xi and Xk could be the way
+<img src="src/distance.png" alt="drawing" width="200"/>
+
+# Content-based filtering
 
 ## Collaborative filtering vs Content-based filtering
 
@@ -67,6 +81,7 @@ title: [Coursera Recommendation by Deeplearning.ai](https://www.coursera.org/lea
 - 협업 필터링은 사용자의 행동 정보(별점 등)을 기반으로 추천하는 것
 - 컨텐츠 기반 필터링은 유저나 사용자의 정보(나이, 제품특징 등)을 기반으로 추천하는 것
 - 유저 및 아이템의 피쳐를 신경망을 통해 임베딩 할 수 있음
+- 코드로 표현하면 아래와 같음
 
 ```python3
 net = Net()
@@ -84,6 +99,7 @@ similarity = similiarty_func(Vm_j, Vm_k) # the higher, the similar
 ```
 
 
-# Content-based filtering
+# Reference
 
-# Principal Component Analysis
+- [Main Course](https://www.coursera.org/learn/unsupervised-learning-recommenders-reinforcement-learning/)
+- [Recommender Systems: Content-Based Recommendations & Collaborative Filtering](https://medium.com/mlearning-ai/recommender-systems-content-based-recommendations-collaborative-filtering-full-6483b6caa5eb#527d)

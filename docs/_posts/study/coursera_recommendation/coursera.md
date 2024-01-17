@@ -3,7 +3,12 @@ title: [Coursera Recommendation by Deeplearning.ai](https://www.coursera.org/lea
 ---
 
 
+
 # Recommender Systems implementation detail
+
+## Intro
+
+- this is a summary of [Recommendation System Course in Courser by Deeplearning.ai](https://www.coursera.org/learn/unsupervised-learning-recommenders-reinforcement-learning/)
 
 ## Mean Normalization
 
